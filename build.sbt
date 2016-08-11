@@ -19,6 +19,8 @@ resolvers += "Spring Releases" at "http://repo.spring.io/libs-release-remote/"
 
 resolvers += "Local Ivy Repository" at "file:///" + Path.userHome + "/.ivy2/cache"
 
+resolvers += "Second Local" at "file:///C:/Users/PLyani/.ivy2/cache"
+
 
 
 
