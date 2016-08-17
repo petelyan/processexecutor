@@ -15,13 +15,13 @@ resolvers += "Typesafe Repository" at "https://repo.typesafe.com/typesafe/releas
 resolvers += "Sonatype OSS Maven Repository" at "https://oss.sonatype.org/content/repositories/public"
 resolvers += "Spring Releases" at "http://repo.spring.io/libs-release-remote/"
 
+resolvers += "Repo for Jenkins" at "/home/cloudera/.ivy2/cache"
 
 
 resolvers += "Local Ivy Repository" at "file://" + Path.userHome.absolutePath + "/.ivy2/cache"
 
-/*resolvers += "Second Local" at "file:///C:/Users/PLyani/.ivy2/cache"
+resolvers += "Local Ivy Repository Windows" at "file:///C:/Users/PLyani/.ivy2/cache"
 
-resolvers += "Third Local" at "file:///~/.ivy2/cache"*/
 
 
 
