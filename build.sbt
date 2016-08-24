@@ -15,13 +15,6 @@ resolvers += "Typesafe Repository" at "https://repo.typesafe.com/typesafe/releas
 resolvers += "Sonatype OSS Maven Repository" at "https://oss.sonatype.org/content/repositories/public"
 resolvers += "Spring Releases" at "http://repo.spring.io/libs-release-remote/"
 
-resolvers += "Repo for Jenkins" at "file:///home/cloudera/.ivy2/cache"
-
-
-resolvers += "Local Ivy Repository" at "file://" + Path.userHome.absolutePath + "/.ivy2/cache"
-
-resolvers += "Local Ivy Repository Windows" at "file:///C:/Users/PLyani/.ivy2/cache"
-
 resolvers += "Local Ivy Repository" at "file:///" + Path.userHome.absolutePath + "/.ivy2/cache"
 
 
@@ -35,9 +28,6 @@ libraryDependencies ++= Seq(
   ,"com.dataprocessor" %% "dataprocessor" % "1.1"
   ,"org.scala-lang" % "scala-library" % "2.10.5" % "provided"
   ,"junit" % "junit" % "4.12"
-/*  ,"org.apache.spark" % "spark-sql_2.10" % "1.5.1"
-  ,"org.apache.spark" % "spark-hive_2.10" % "1.5.1"
-  ,"org.apache.spark" % "spark-mllib_2.10" % "1.5.1"*/
   ,"com.holdenkarau" %% "spark-testing-base" % "1.5.1_0.3.3"
 )
 
