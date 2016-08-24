@@ -15,9 +15,7 @@ resolvers += "Typesafe Repository" at "https://repo.typesafe.com/typesafe/releas
 resolvers += "Sonatype OSS Maven Repository" at "https://oss.sonatype.org/content/repositories/public"
 resolvers += "Spring Releases" at "http://repo.spring.io/libs-release-remote/"
 
-
-
-resolvers += "Local Ivy Repository" at "file:///" + Path.userHome + "/.ivy2/cache"
+resolvers += "Local Ivy Repository" at "file:///" + Path.userHome.absolutePath + "/.ivy2/cache"
 
 
 
@@ -37,4 +35,6 @@ libraryDependencies ++= Seq(
 )
 
 
-publishTo := Some(Resolver.file("file",new File(Path.userHome.absolutePath + "/.ivy2/cache/")))
+publishTo := Some(Resolver.file("file",new File(Path.userHome.absolutePath + "/.ivy2/cache")))
+
+

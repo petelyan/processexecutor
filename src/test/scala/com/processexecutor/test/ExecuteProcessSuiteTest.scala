@@ -14,7 +14,7 @@ import org.scalatest.junit.JUnitRunner
 class ExecuteProcessSuiteTest extends FunSuite with Matchers with SharedSparkContext{
 
 
-   test("map and reduce"){
+   test("each string should have a value equal to length * appearances"){
      val counter = sc.accumulator(0)
      val input: RDD[String] = sc.parallelize(List("green","red","blue","green","red","blue"))
      val resultRDD: RDD[(String,Int)] = ProcessData.mapStringLength(input)
