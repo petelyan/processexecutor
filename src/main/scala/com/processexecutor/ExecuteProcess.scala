@@ -19,7 +19,7 @@ object ExecuteProcess {
       System.err.println("Usage: ExecuteProcess <master> <inputfile>")
     }
 
-    //val master = args(0)
+
     val inputFile = args(0)
     val outputDir = args(1)
     val outputFile = outputDir + "/" + "dummyOutput.csv"
