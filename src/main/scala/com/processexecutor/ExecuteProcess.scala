@@ -34,9 +34,6 @@ object ExecuteProcess {
     OutputWriter.writeFile(outputFile,outputRDD)
     context.stop()
 
-
-
-
   }
 
 
